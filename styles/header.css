@@ -1,0 +1,37 @@
+.header {
+    background-color: #f5f5f5;
+    padding: 15px 25px;
+}
+
+.header .header__logo {
+    border: 5px #fff solid;   
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header .header__name {
+    font-size: 66px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 250px;
+    line-height: 110px;
+}
+
+.header .header__menu {
+    float: right;
+    line-height: 110px;
+}
+
+.header .header__menu__link {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header .header__menu__link:hover {
+    border-bottom: 1px #000 solid;
+}
+
