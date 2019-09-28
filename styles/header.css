@@ -33,45 +33,61 @@
         }
     }
 
-     
+.menu-hamburguer {
+    float: right;
+    display: none;
+    margin: 40px 20px 0 0;
+    cursor: pointer;
+}
+
+.menu-hamburguer .bar1, .menu-hamburguer .bar2, .menu-hamburguer .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+      
+.menu-hamburguer.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+      
+.menu-hamburguer.change .bar2 {opacity: 0;}
+      
+.menu-hamburguer.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header .header__menu-hambuguer {
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    background-color: #393939;
+    color: #000;
+    width: 200px;
+}
+
+.header .header__menu-hambuguer.opacity0 {
+    opacity: 0;
+}
+
 @media screen 
     and (max-width: 992px) {
         .menu-hamburguer {
-            float: right;
             display: inline-block;
-            margin: 40px 20px 0 0;
-            cursor: pointer;
         }
 
-        .menu-hamburguer .bar1, .menu-hamburguer .bar2, .menu-hamburguer .bar3 {
-            width: 35px;
-            height: 5px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-              
-        .menu-hamburguer.change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-              
-        .menu-hamburguer.change .bar2 {opacity: 0;}
-              
-        .menu-hamburguer.change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-        }
+       
 
         .header .header__menu-hambuguer {
-            /*display: none;*/
-            position: fixed;
-            top: 120px;
-            right: 15px;
-            background-color: #393939;
-            color: #000;
-            width: 200px;
+            opacity: 1;
         }
+
+       
 
         .header .header__menu-hambuguer .header__menu__link {
             background-color: #393939;

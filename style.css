@@ -13,3 +13,7 @@ body {
 .nodisplay {
      display: none;
 }
+
+.opacity0 {
+    opacity: 0;
+}
