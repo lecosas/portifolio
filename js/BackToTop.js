@@ -8,7 +8,6 @@ class BackToTop {
     }
 
     handleClick(_instance, event) {
-        
         const scrolling = setInterval(() => {
             if (window.scrollY <= 0) {
                 return clearInterval(scrolling); 
