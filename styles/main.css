@@ -1,0 +1,52 @@
+.main {
+    clear: both;
+}
+.main .main__photo {
+    width: 30%;
+    float: left;
+    background-color: #555;
+    margin-top: 20px;
+}
+
+.main .main__about {
+    float: right;
+    margin-top: 20px;
+    padding: 80px;
+    width: calc(70% - 160px);
+    margin: 10px auto
+}
+
+.main .main__about p {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.main .main__photo__avatar {
+    width: 100%;
+}
+
+.main .main__tabs {
+    padding: 20px 0;
+}
+.main .main__tabs .main__tabs__button {
+    background-color: #818592;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.main .main__tabs .main__tabs__button.active {
+    background-color: #363940;
+}
+
+.main .main__tabs__tab {
+    display: none;
+    border: 1px solid #c7c9cf;
+    padding: 20px;
+}
+
+.main .main__tabs__tab.active {
+    display: block;
+    border-top: 4px #363940 solid;
+}

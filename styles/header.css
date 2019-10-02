@@ -1,29 +1,43 @@
 .header {
-    background-color: #f5f5f5;
-    padding: 15px 25px;
-    position: fixed;
-    width: calc(100% - 50px);
+
 }
 
-.header .header__logo {
-    border: 5px #fff solid;   
-    width: 100px;
-    height: 100px;
+.header .header__main {
+    margin: 35px 0;
+}
+.header .header__menu__top {
+    border-bottom: 1px solid #f0f0f0;
+    background: #fafafa;
+    text-transform: uppercase;
+    padding: 6px 0;
+}
+
+.header .header__menu__top__link {
+    font-size: 12px;
+    padding: 10px 15px;
     display: inline-block;
-    vertical-align: top;
 }
 
 .header .header__name {
-    font-size: 66px;
-    font-weight: 600;
-    display: inline-block;
-    margin-left: 50px;
-    line-height: 110px;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.header .header__name__slogan {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c7c7c7; 
+    text-align: center;
 }
 
 .header .header__menu {
-    float: right;
-    line-height: 110px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
 }
 
 @media screen 
@@ -110,13 +124,8 @@
 
 
 .header .header__menu__link {
-    color: #000;
-    font-size: 30px;
-    text-decoration: none;
-    margin-left: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
-
-.header .header__menu__link:hover {
-    border-bottom: 1px #000 solid;
-}
-
