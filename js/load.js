@@ -5,7 +5,7 @@ const load = () => {
 }
 
 function enviar() {
-    const loading = document.querySelector(".loading").value;
+    const loading = document.querySelector(".loading");
     loading.className = loading.className + ' show';
 
     const name = document.querySelector(".field_name").value;
@@ -38,11 +38,11 @@ function enviar() {
     )
         .then(data => {
             loading.className = loading.className.replace('show', '');
-
+            alert('Contato enviado com sucesso!');
         })
         .catch(err => {
             loading.className = loading.className.replace('show', '');
-            
+            alert('Erro ao enviar contato. Tente novamente!');
         });
 
     //console.log(msg);
