@@ -1,14 +1,15 @@
 .main {
     clear: both;
 }
-.main .main__photo {
+
+.main .main__about .main__about__photo {
     width: 30%;
     float: left;
     background-color: #555;
     margin-top: 20px;
 }
 
-.main .main__about {
+.main .main__about .main__about__about {
     float: right;
     margin-top: 20px;
     padding: 80px;
@@ -16,16 +17,17 @@
     margin: 10px auto
 }
 
-.main .main__about p {
+.main .main__about .main__about__about p {
     font-size: 22px;
     line-height: 28px;
 }
 
-.main .main__photo__avatar {
+.main .main__about .main__about__photo__avatar {
     width: 100%;
 }
 
 .main .main__tabs {
+    clear: both;
     padding: 20px 0;
 }
 .main .main__tabs .main__tabs__button {
@@ -49,4 +51,27 @@
 .main .main__tabs__tab.active {
     display: block;
     border-top: 4px #363940 solid;
+}
+
+/*
+    Contact Form
+*/
+.main__contact {
+    clear: both;
+}
+.main__contact .form-label {
+    display: block;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.main__contact .field {
+    display: block;
+    padding: 7px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.main__contact textarea.field {
+    width: 80%;
 }

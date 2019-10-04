@@ -4,7 +4,7 @@ class MenuHamburguer {
         this.element.addEventListener(
             'click', function(){
                 this.classList.toggle("change");
-                document.querySelector('.header .header__menu-hambuguer').classList.toggle("opacity0");
+                document.querySelector('.header .header__menu-hambuguer').classList.toggle("active");
               });
     }
 

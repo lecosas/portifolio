@@ -19,40 +19,55 @@
         <section class="header__main">
             <div class="inner">
                 <h1 class="header__name">Leandro Cosas</h1>
-                <p class="header__name__slogan">Teste teste teste teste</p>
+                <p class="header__name__slogan">Compartilhando o  que li, vi e aprendi</p>
             </div>
         </section>
         <nav class="header__menu">
             <div class="inner">
-                <a class="header__menu__link" href="#">Home</a>
-                <a class="header__menu__link" href="#">Mobile</a>
-                <a class="header__menu__link" href="#">Web</a>
-                <a class="header__menu__link" href="#">Empreendedorismo</a>
-                <a class="header__menu__link" href="#">E-commerce</a>
-                <a class="header__menu__link" href="#">Desenv. Pessoal</a>
+                <div class="header__menu__desk">
+                    <a class="header__menu__link" href="#">Home</a>
+                    <a class="header__menu__link" href="#">Mobile</a>
+                    <a class="header__menu__link" href="#">Web</a>
+                    <a class="header__menu__link" href="#">Empreendedorismo</a>
+                    <a class="header__menu__link" href="#">E-commerce</a>
+                    <a class="header__menu__link" href="#">Desenv. Pessoal</a>
+                </div>
+                <div class="header__menu__mobile">
+                    <div class="header__menu-hamburguer-wrap">
+                        <div class="menu-hamburguer">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <span class="menu-hamburguer-text">Menu</span>
+                        
+                    </div>
+                    <nav class="header__menu-hambuguer">
+                        <a class="header__menu__link" href="#">Home</a>
+                        <a class="header__menu__link" href="#">Mobile</a>
+                        <a class="header__menu__link" href="#">Web</a>
+                        <a class="header__menu__link" href="#">Empreendedorismo</a>
+                        <a class="header__menu__link" href="#">E-commerce</a>
+                        <a class="header__menu__link" href="#">Desenv. Pessoal</a>
+                    </nav>
+                </div>
             </div>
+            
         </nav>
-        <div class="menu-hamburguer">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <nav class="header__menu-hambuguer opacity0">
-            <a class="header__menu__link" href="#">Sobre</a>
-            <a class="header__menu__link" href="#">Contato</a>
-        </nav>
+        
     </header>
     <main class="main" role="main">
         <div class="inner">
-            <section class="main__photo">
-                <img class="main__photo__avatar" src="./assets/images/lecosas.jpg" alt="Foto Leandro Cosas">
-            </section>
-            <section class="main__about">
-                <h2>Sobre mim</h2>
-                <p>Sou formado em Desenvolvimento de Sistema pela Universidade de Mogi das Cruzes, atualmente cursando o MBA Mobile Developmente pela FIAP.
-                Experiência de mais de 10 anos em desenvolvimento .NET, SQL Server e automação. Atualmente sou CEO do e-commerce de roupas intimas masculina, a Cueca Store.</p>
-            </section>
-            <div class="clear"></div>
+            <div class="main__about">
+                <section class="main__about__photo">
+                    <img class="main__about__photo__avatar" src="./assets/images/lecosas.jpg" alt="Foto Leandro Cosas">
+                </section>
+                <section class="main__about__about">
+                    <h2>Sobre mim</h2>
+                    <p>Sou formado em Desenvolvimento de Sistema pela Universidade de Mogi das Cruzes, atualmente cursando o MBA Mobile Developmente pela FIAP.
+                    Experiência de mais de 10 anos em desenvolvimento .NET, SQL Server e automação. Atualmente sou CEO do e-commerce de roupas intimas masculina, a Cueca Store.</p>
+                </section>
+            </div>
             <section class="main__tabs">
                 <a id="btn_tab1" class="main__tabs__button active" href="#">Resumo</a>
                 <a id="btn_tab2" class="main__tabs__button" href="#">Experiência</a>
@@ -69,6 +84,25 @@
 
             </section>
 
+            <section class="main__contact">
+                <h2>Contato</h2>
+                <form>
+                    <label class="form-label" for="name">Nome*</label>
+                    <input class="field field_name" id="name" type="text" name="name" />
+
+                    <label class="form-label" for="subject">Assunto*</label>
+                    <input class="field field_subject"  id="subject" type="text" name="subject" />
+
+                    <label class="form-label" for="email">E-mail*</label>
+                    <input class="field field_email"  id="email" type="email" name="email" />
+                    
+                    <label class="form-label" for="message">Mensagem*</label>
+                    <textarea class="field field_message" id="message" name="message" rows="10"></textarea>
+
+                    <button type="button" onclick="enviar();">Enviar</button>
+                </form>
+            </section>
+            <br /><br /><br />
         </main>
     </div>
     <footer class="footer" role="footer">
