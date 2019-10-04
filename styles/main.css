@@ -2,6 +2,10 @@
     clear: both;
 }
 
+.main .main__about {
+    overflow: hidden;
+}
+
 .main .main__about .main__about__photo {
     width: 30%;
     float: left;
@@ -28,8 +32,10 @@
 
 .main .main__tabs {
     clear: both;
-    padding: 20px 0;
+    margin-top: 25px;
+    overflow: hidden;
 }
+
 .main .main__tabs .main__tabs__button {
     background-color: #818592;
     color: #fff;
@@ -58,6 +64,8 @@
 */
 .main__contact {
     clear: both;
+    margin-top: 25px;
+    overflow: hidden;
 }
 .main__contact .form-label {
     display: block;
@@ -74,4 +82,57 @@
 
 .main__contact textarea.field {
     width: 80%;
+}
+
+/* 
+    Skills
+*/
+.main .main__skills { 
+    clear: both;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.main .main__skills .main__skills__texto {
+    width: 40%; 
+    float: left;
+}
+
+.main .main__skills .main__skills__bars {
+    width: 50%; 
+    float: right;
+}
+
+.main .main__skills .main_skills_bars__bar {
+    width: calc(100% - 2px);
+    border: 1px solid #c7c9cf;
+    margin-top: 15px;
+    
+}
+
+.main .main__skills .main_skills_bars__bar__inner { 
+    color: #fff;
+    background-color: #363940;
+    padding: 10px;
+    
+}
+
+.main .main__skills .main_skills_bars__bar__inner.html {
+    width: 65%;
+}
+
+.main .main__skills .main_skills_bars__bar__inner.css {
+    width: 70%;
+}
+
+.main .main__skills .main_skills_bars__bar__inner.js {
+    width: 40%;
+}
+
+.main .main__skills .main_skills_bars__bar__inner.ios {
+    width: 20%;
+}
+
+.main .main__skills .main_skills_bars__bar__inner.android {
+    width: 25%;
 }

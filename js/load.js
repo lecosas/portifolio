@@ -5,10 +5,13 @@ const load = () => {
 }
 
 function enviar() {
-    let name = document.querySelector(".field_name").value;
-    let subject = document.querySelector(".field_subject").value;
-    let email = document.querySelector(".field_email").value;
-    let message = document.querySelector(".field_message").value;
+    const loading = document.querySelector(".loading").value;
+    loading.className = loading.className + ' show';
+
+    const name = document.querySelector(".field_name").value;
+    const subject = document.querySelector(".field_subject").value;
+    const email = document.querySelector(".field_email").value;
+    const message = document.querySelector(".field_message").value;
 
     const msg = {
         from:       "lecosas@assessoria.app",
@@ -25,10 +28,22 @@ function enviar() {
     fetch(
         'https://fiap-sender.herokuapp.com/email/send',
         {
-            method: 'POST',
-            body:   JSON.stringify(msg)
+            method:     'POST',
+            headers:    {
+                'Accept':       'application/json',
+                'Content-Type': 'application/json',
+            },
+            body:       JSON.stringify(msg),
         }
-    );
+    )
+        .then(data => {
+            loading.className = loading.className.replace('show', '');
+
+        })
+        .catch(err => {
+            loading.className = loading.className.replace('show', '');
+            
+        });
 
     //console.log(msg);
 }
