@@ -32,10 +32,25 @@ h2 {
 p {
     
 }
+
 .inner {
     max-width: 1200px;
     margin: 0 auto;
     padding:0 30px;
+}
+
+.inner-section {
+    max-width: 1200px;
+    margin: 25px auto 0 auto;
+    padding:0 30px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 .nodisplay {

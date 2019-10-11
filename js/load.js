@@ -1,6 +1,7 @@
 const load = () => {
     const backToTop = new BackToTop();
     const menuHamburguer = new MenuHamburguer();
+    const skills = new Skills();
     const tab = new Tab();
 }
 

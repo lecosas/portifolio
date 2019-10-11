@@ -17,10 +17,8 @@
             </div>
         </nav>
         <section class="header__main">
-            <div class="inner">
-                <h1 class="header__name">Leandro Cosas</h1>
-                <p class="header__name__slogan">Compartilhando o  que li, vi e aprendi</p>
-            </div>
+            <h1 class="header__name">Leandro Cosas</h1>
+            <p class="header__name__slogan">Compartilhando o  que li, vi e aprendi</p>
         </section>
         <nav class="header__menu">
             <div class="inner">
@@ -40,7 +38,6 @@
                             <div class="bar3"></div>
                         </div>
                         <span class="menu-hamburguer-text">Menu</span>
-                        
                     </div>
                     <nav class="header__menu-hambuguer">
                         <a class="header__menu__link" href="#">Home</a>
@@ -57,18 +54,19 @@
         
     </header>
     <main class="main" role="main">
-        <div class="inner">
-            <div class="main__about">
+            <div class="main__about inner-section">
+                
+                <section class="main__about__about">
+                    <h2>Sobre mim</h2>
+                    <p>Me formei em Desenvolvimento de Sistema pela Universidade de Mogi das Cruzes em 2005. Atualmente estou cursando o MBA Mobile Developmente pela FIAP.
+                    Experiência de mais de 10 anos em desenvolvimento .NET, SQL Server e automação. Atualmente sou CEO do e-commerce de roupas intimas masculina, a <a href="https://www.cuecastore.com.br" target="_blank">Cueca Store</a>. Atualmente também aprendendo novas 
+                    tecnologias de desenvolvimento mobile: Swift e Kotlin; desenvolvimento WEB: HTML5, CSS3, Node, Javascript, TypeScript, React, Angular, Wordpress e Magento; DevOps: Amazon AWS, EC2 e RDS; marketing digital e e-commerce: e-mail marketing, SEO e Google Ads.</p>
+                </section>
                 <section class="main__about__photo">
                     <img class="main__about__photo__avatar" src="./assets/images/lecosas.jpg" alt="Foto Leandro Cosas">
                 </section>
-                <section class="main__about__about">
-                    <h2>Sobre mim</h2>
-                    <p>Sou formado em Desenvolvimento de Sistema pela Universidade de Mogi das Cruzes, atualmente cursando o MBA Mobile Developmente pela FIAP.
-                    Experiência de mais de 10 anos em desenvolvimento .NET, SQL Server e automação. Atualmente sou CEO do e-commerce de roupas intimas masculina, a Cueca Store.</p>
-                </section>
             </div>
-            <section class="main__tabs">
+            <section class="main__tabs inner-section">
                 <a id="btn_tab1" class="main__tabs__button active" href="#">Resumo</a>
                 <a id="btn_tab2" class="main__tabs__button" href="#">Experiência</a>
                 <a id="btn_tab3" class="main__tabs__button" href="#">Educação</a>
@@ -84,31 +82,15 @@
 
             </section>
 
-            <section class="main__skills">
+            <section class="main__skills inner-section">
                 <h2>Skills</h2>
-                <div class="main__skills__texto">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="main__skills__bars bars-left">
                 </div>
-                <div class="main__skills__bars">
-                    <div class="main_skills_bars__bar">
-                        <div class="main_skills_bars__bar__inner html">HTML5</div>
-                    </div>
-                    <div class="main_skills_bars__bar">
-                        <div class="main_skills_bars__bar__inner css">CSS3</div>
-                    </div>
-                    <div class="main_skills_bars__bar">
-                        <div class="main_skills_bars__bar__inner js">Javascript</div>
-                    </div>
-                    <div class="main_skills_bars__bar">
-                        <div class="main_skills_bars__bar__inner android">Android</div>
-                    </div>
-                    <div class="main_skills_bars__bar">
-                        <div class="main_skills_bars__bar__inner ios">iOS</div>
-                    </div>
-                </div>
+                <div class="main__skills__bars bars-right">
+                </div>                
             </section>
 
-            <section class="main__contact">
+            <section class="main__contact inner-section">
                 <h2>Contato</h2>
                 <form>
                     <label class="form-label" for="name">Nome*</label>
@@ -167,6 +149,7 @@
     <script src="./js/backtotop.js"></script>
     <script src="./js/menuhamburguer.js"></script>
     <script src="./js/tab.js"></script>
+    <script src="./js/skills.js"></script>
 
 </body>
 

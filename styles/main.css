@@ -6,33 +6,62 @@
     overflow: hidden;
 }
 
-.main .main__about .main__about__photo {
-    width: 30%;
-    float: left;
-    background-color: #555;
-    margin-top: 20px;
+.main .main__about .main__about__about {
+    width: 100%;
 }
 
-.main .main__about .main__about__about {
-    float: right;
-    margin-top: 20px;
-    padding: 80px;
-    width: calc(70% - 160px);
-    margin: 10px auto
+.main .main__about .main__about__about h2 {
+    text-align: center;
+    padding-top: 0;
 }
 
 .main .main__about .main__about__about p {
     font-size: 22px;
     line-height: 28px;
+    text-align: center;
 }
 
-.main .main__about .main__about__photo__avatar {
+.main .main__about .main__about__photo {
+    margin-top: 25px;
+    text-align: center;
     width: 100%;
+}    
+
+.main .main__about .main__about__photo .main__about__photo__avatar { 
+    margin: 0 auto;
+    max-width: 100%;
 }
 
+@media screen 
+    and (min-width: 992px) {        
+        .main .main__about .main__about__about {
+            float: left;
+            width: calc(70% - 20px);
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        .main .main__about .main__about__about h2 {
+            text-align: left;
+        }
+        
+        .main .main__about .main__about__about p {
+            text-align: left;
+        }
+
+        .main .main__about .main__about__photo {
+            margin-top: 0;
+            width: 30%;
+            float: right;
+            text-align: right;
+        }
+    }
+
+/* 
+    Tabs
+*/
 .main .main__tabs {
     clear: both;
-    margin-top: 25px;
     overflow: hidden;
 }
 
@@ -59,12 +88,16 @@
     border-top: 4px #363940 solid;
 }
 
+@media screen 
+    and (min-width: 992px) {  
+
+    }
+
 /*
     Contact Form
 */
 .main__contact {
     clear: both;
-    margin-top: 25px;
     overflow: hidden;
 }
 .main__contact .form-label {
@@ -106,50 +139,41 @@
 */
 .main .main__skills { 
     clear: both;
-    margin-top: 25px;
     overflow: hidden;
 }
 
-.main .main__skills .main__skills__texto {
-    width: 40%; 
-    float: left;
-}
-
-.main .main__skills .main__skills__bars {
-    width: 50%; 
-    float: right;
-}
-
 .main .main__skills .main_skills_bars__bar {
-    width: calc(100% - 2px);
     border: 1px solid #c7c9cf;
     margin-top: 15px;
-    
 }
 
 .main .main__skills .main_skills_bars__bar__inner { 
     color: #fff;
     background-color: #363940;
     padding: 10px;
-    
 }
 
-.main .main__skills .main_skills_bars__bar__inner.html {
-    width: 65%;
-}
+@media screen 
+    and (min-width: 992px) { 
+        .main .main__skills .main__skills__bars {
+            width: 50%; 
+        }
 
-.main .main__skills .main_skills_bars__bar__inner.css {
-    width: 70%;
-}
+        .main .main__skills .main_skills_bars__bar {
+            width: calc(100% - 20px);
+            border: 1px solid #c7c9cf;
+            margin-top: 15px;
+        }
 
-.main .main__skills .main_skills_bars__bar__inner.js {
-    width: 40%;
-}
+        .main .main__skills .main__skills__bars.bars-left {
+            float: left;
+        }
 
-.main .main__skills .main_skills_bars__bar__inner.ios {
-    width: 20%;
-}
+        .main .main__skills .main__skills__bars.bars-right {
+            float: right;
+        }
 
-.main .main__skills .main_skills_bars__bar__inner.android {
-    width: 25%;
-}
+        .main .main__skills .main__skills__bars.bars-right .main_skills_bars__bar {
+            width: 100%;
+        }
+    }
