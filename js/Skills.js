@@ -56,13 +56,12 @@ class Skills {
 
     makeSkillsBar(skills) {
         const bars = document.querySelector('.main__skills__bars');
-        const bar = document.querySelector('.main__skills__bars .main_skills_bars__bar');
-        console.log(bars);
+        
         let divs = '';
 
-        skills.forEach(element => {
+        skills.forEach(skill => {
             //divs += `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${element.value}%;">${element.skill}<span class="right"></span></div>${element.value}%</div>`;
-            divs += `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${element.value}%;">${element.skill}<span class="right"></span></div>${element.value}%</div>`;
+            divs += `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${skill.value}%;">${skill.skill}<span class="right"></span></div>${skill.value}%</div>`;
         });
         bars.innerHTML = divs;
     }
