@@ -88,11 +88,6 @@
     border-top: 4px #363940 solid;
 }
 
-@media screen 
-    and (min-width: 992px) {  
-
-    }
-
 /*
     Contact Form
 */
@@ -110,11 +105,7 @@
     display: block;
     padding: 7px;
     margin-bottom: 20px;
-    width: 60%;
-}
-
-.main__contact textarea.field {
-    width: 80%;
+    width: 100%;
 }
 
 .main__contact .loading {
@@ -134,6 +125,18 @@
 .main__contact .loading.show {
     display: block;
 }
+
+@media screen 
+    and (min-width: 992px) {  
+        .main__contact .field {
+            width: 50%;
+        }
+
+        .main__contact textarea.field {
+            width: 80%;
+        }
+    }
+
 /* 
     Skills
 */
@@ -144,12 +147,20 @@
 
 .main .main__skills .main_skills_bars__bar {
     border: 1px solid #c7c9cf;
-    margin-top: 15px;
+    margin-top: 15px;   
+    overflow: hidden;
 }
 
 .main .main__skills .main_skills_bars__bar__inner { 
+    float: left;
     color: #fff;
     background-color: #363940;
+    padding: 10px;
+}
+
+.main .main__skills .main_skills_bars__bar .percentual { 
+    display: inline-block;
+    float: right;
     padding: 10px;
 }
 

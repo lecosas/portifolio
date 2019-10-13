@@ -27,11 +27,11 @@ class Skills {
             }, 
             {
                 skill: 'E-commerce', 
-                value: 90
+                value: 75
             }, 
             {
                 skill: 'SEO', 
-                value: 70
+                value: 65
             }, 
             {
                 skill: 'E-mail Marketing', 
@@ -39,15 +39,31 @@ class Skills {
             }, 
             {
                 skill: 'React', 
-                value: 1
+                value: 10
             }, 
             {
                 skill: 'Angular', 
-                value: 1
+                value: 12
             }, 
             {
-                skill: 'React Native', 
-                value: 0
+                skill: 'R. Native', 
+                value: 14
+            }, 
+            {
+                skill: 'SQL Server', 
+                value: 55
+            }, 
+            {
+                skill: 'Amazon AWS', 
+                value: 30
+            }, 
+            {
+                skill: 'Linux', 
+                value: 25
+            }, 
+            {
+                skill: 'VB.Net', 
+                value: 65
             }
         ];
     
@@ -55,14 +71,26 @@ class Skills {
     }
 
     makeSkillsBar(skills) {
-        const bars = document.querySelector('.main__skills__bars');
-        
-        let divs = '';
+        const barsLeft = document.querySelector('.main__skills__bars.bars-left');
+        const barsRight = document.querySelector('.main__skills__bars.bars-right');
+
+        let left = true;
+        let divsLeft = '';
+        let divsRight = '';
+        let divAux = '';
 
         skills.forEach(skill => {
-            //divs += `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${element.value}%;">${element.skill}<span class="right"></span></div>${element.value}%</div>`;
-            divs += `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${skill.value}%;">${skill.skill}<span class="right"></span></div>${skill.value}%</div>`;
+            divAux = `<div class="main_skills_bars__bar"><div class="main_skills_bars__bar__inner" style="width:${skill.value}%;">${skill.skill}</div><p class="percentual">${skill.value}%</p></div>`;
+            if (left) {
+                divsLeft += divAux;
+                left = false;
+            } else {
+                divsRight += divAux;
+                left = true;
+            }
         });
-        bars.innerHTML = divs;
+
+        barsLeft.innerHTML = divsLeft;
+        barsRight.innerHTML = divsRight;
     }
 }

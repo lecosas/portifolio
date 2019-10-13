@@ -3,7 +3,6 @@
     color: #fff;
     background-color: #393939;
     padding: 20px 25px;
-    /* background-color: blueviolet; */
 }
 
 .footer__menu {
@@ -39,6 +38,7 @@
     clear: both;
     float: right;
     margin-top: 10px;
+    color: #fff;
 }
 
 .footer .footer__copyright {
