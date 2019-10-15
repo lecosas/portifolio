@@ -88,6 +88,9 @@
     border-top: 4px #363940 solid;
 }
 
+.main .main__tabs__tab ul li {
+    padding: 5px 0;
+}
 /*
     Contact Form
 */

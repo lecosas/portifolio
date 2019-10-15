@@ -2,8 +2,7 @@ class BackToTop {
     constructor () {
         this.element = document.querySelector('.footer .footer__btntopo');
         this.element.addEventListener(
-            'click',
-            this.handleClick.bind(event, this)
+            'click', this.handleClick.bind(event, this)
         );
     }
 
