@@ -97,7 +97,9 @@
 .main__contact {
     clear: both;
     overflow: hidden;
+    padding-bottom: 40px;
 }
+
 .main__contact .form-label {
     display: block;
     padding-bottom: 3px;
